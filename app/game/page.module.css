@@ -1,0 +1,75 @@
+.GamePage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black-theme);
+}
+
+.GamePage__main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 85px;
+}
+
+.GamePage__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 7px;
+  margin-bottom: 7px;
+}
+
+.GamePage__cell {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 1.5px solid #3a3a3c;
+    font-size: 24px;
+    font-family: Inter;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    display: inline-block;
+    position: relative;
+    transition: background-color 0.3s ease, border 0.3s ease;
+  }
+
+.GamePage__cell_green {
+    background-color: var(--green-color);
+    color: white;
+    border: 1.5px solid var(--green-color);
+  }
+  
+  .GamePage__cell_yellow {
+    background-color: var(--yellow-color); 
+    color: white;
+    border: 1.5px solid var(--yellow-color);
+  }
+
+  .GamePage__cell_gray {
+    background-color: var(--gray-color);
+    color: white;
+    border: 1.5px solid var(--gray-color);
+  }
+  
+
+  .flip_horizontal_bottom {
+    animation: flip-horizontal-bottom 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  }
+  
+  @keyframes flip-horizontal-bottom {
+    0% {
+      transform: rotateX(0);
+    }
+    50% {
+      transform: rotateX(90deg);
+    }
+    100% {
+      transform: rotateX(0deg);
+    }
+  }
+
+ 

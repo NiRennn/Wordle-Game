@@ -1,0 +1,70 @@
+
+
+.HomePage__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.HomePage__logo {
+  width: 90px;
+  height: 90px;
+}
+
+.HomePage__title {
+  font-weight: 700;
+  font-size: 42px;
+  font-family: Inter;
+}
+
+.HomePage__description {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 38px;
+ font-family: Bellota;
+ font-weight: 600;
+ max-width: 430px;
+
+  
+}
+
+.HomePage__buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.HomePage__button {
+  margin-top: 20px;
+  padding: 15px 70px;
+  border: none;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+
+  &.HomePage__button:hover {
+    opacity: 0.8;
+  }
+  
+  &.HomePage__button:active {
+    transform: scale(0.95);
+    opacity: 0.9;
+  
+  }
+
+}
+
+
+
+
+.HomePage__dateCreated {
+  text-align: center;
+  font-size: 18px;
+}

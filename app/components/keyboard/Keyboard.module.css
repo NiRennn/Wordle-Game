@@ -1,0 +1,77 @@
+.Keyboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.Keyboard__row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.Keyboard__button {
+  background-color: var(--gray-color);
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 15px 15px;
+  min-width: 40px;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+
+  &.Keyboard__button:hover {
+    opacity: 0.7;
+  }
+
+  &.Keyboard__button:active {
+    transform: scale(0.95);
+    opacity: 0.9;
+  }
+}
+
+
+.Keyboard__button_green {
+  background-color: var(--green-color);
+}
+
+.Keyboard__button_yellow {
+  background-color: var(--yellow-color);
+}
+
+.Keyboard__button_gray {
+  background-color: rgb(75, 75, 75);
+}
+
+
+@media (max-width: 650px) {
+  .Keyboard__button {
+    padding: 15px 10px;
+    min-width: 30px;
+    min-height: 30px;
+  }
+  
+}
+
+
+@media (max-width: 500px) {
+  .Keyboard__row {
+    gap: 5px;
+  }
+  .Keyboard__button {
+    padding: 15px 8px;
+    min-width: 25px;
+    min-height: 25px;
+    font-size: 13px;
+  }
+}
+
